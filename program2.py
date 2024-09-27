@@ -7,7 +7,6 @@ def decode_message( s: str, p: str) -> bool:
         def is_match(i, j):
             if i == len(message) and j == len(pattern):
                 return True
-            # If only the pattern is exhausted but not the message, it's not a match
             if j == len(pattern):
                 return False
 
