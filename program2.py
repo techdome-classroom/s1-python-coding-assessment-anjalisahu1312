@@ -5,7 +5,6 @@ def decodef decode_message(s: str, p: str) -> bool:
             # If we reach the end of both the message and pattern, it's a match
             if i == len(message) and j == len(pattern):
                 return True
-            # If only the pattern is exhausted but not the message, it's not a match
             if j == len(pattern):
                 return False
 
