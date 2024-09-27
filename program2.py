@@ -12,15 +12,12 @@ def decode_message( s: str, p: str) -> bool:
           
             if j == len(pattern):
                 return False
-
-           
             if pattern[j] == '*':
                
                 if i < len(message) and is_match(i + 1, j):
                     return True
                 return is_match(i, j + 1)
-
-            # Handle the '?' wildcard or exact character match
+            
             if i < len(message) and (pattern[j] == '?' or pattern[j] == message[i]):
                 return is_match(i + 1, j + 1)
 
