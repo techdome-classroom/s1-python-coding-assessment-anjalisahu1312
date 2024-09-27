@@ -1,9 +1,4 @@
 class Solution:
-   
-    def getTotalIsles(self, grid: list[list[str]]) -> int:
-    #    write your code here
-    
-    class Solution:
     def getTotalIsles(self, grid: list[list[str]]) -> int:
         if not grid:
             return 0
@@ -28,5 +23,3 @@ class Solution:
                     dfs(i, j)
 
         return islands
-                    
-        return 0
