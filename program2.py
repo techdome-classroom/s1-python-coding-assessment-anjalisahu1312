@@ -10,7 +10,6 @@ def decode_message( s: str, p: str) -> bool:
             if j == len(pattern):
                 return False
 
-            # Handle the '*' wildcard
             if pattern[j] == '*':
                 # Try two options: 
                 # 1. '*' matches no characters -> move only in the pattern
