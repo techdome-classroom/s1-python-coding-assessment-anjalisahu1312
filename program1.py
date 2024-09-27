@@ -53,4 +53,4 @@ map2 = [
 print(num_islands(map1))  # Output: 1
 print(num_islands(map2))  # Output: 3
                     
-        return 0
+    
