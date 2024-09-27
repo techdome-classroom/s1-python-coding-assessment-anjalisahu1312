@@ -33,4 +33,5 @@ def decode_message( s: str, p: str) -> bool:
 print(is_match("aa", "a"))    # Output: False
 print(is_match("aa", "*"))    # Output: True
 print(is_match("cb", "?a"))   # Output: False
+
         return False
